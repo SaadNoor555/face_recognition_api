@@ -4,3 +4,5 @@ __pycache__/
 /media
 /applicant/__pycache__
 db.sqlite3
+/face_venv
+/face_recog_dlib_file
