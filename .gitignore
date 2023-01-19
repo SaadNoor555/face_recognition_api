@@ -1,0 +1,6 @@
+__pycache__/
+/.vscode
+*.pyc
+/media
+/applicant/__pycache__
+db.sqlite3
