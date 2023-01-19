@@ -51,7 +51,7 @@ class UserViewSet(ModelViewSet):
             user.save()
             return Response('User image saved')
         except:
-            return Response('An error occured, please try again later', staus=404)
+            return Response('An error occured, please try again later', staus=400)
 
     @action(detail=True, methods=['GET'])
     def recognize(self, request, id):
@@ -82,5 +82,5 @@ class UserViewSet(ModelViewSet):
                 'faces': faces,
             })
         except:
-            return Response('An unexpected error occured, please try again later')
+            return Response('An unexpected error occured, please try again later', status=400)
         
