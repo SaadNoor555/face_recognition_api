@@ -32,6 +32,7 @@ class UserViewSet(ModelViewSet):
             return Response('User image saved')
         except:
             return Response('An error occured, please try again later', status=404)
+        return Response('Unreachable', status=404)
 
     def Update(self, request, pk=None):
         try:
